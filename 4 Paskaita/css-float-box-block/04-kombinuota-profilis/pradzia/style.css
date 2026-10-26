@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  color: #1e1e2e;
+}
+
+.profile {
+  width: 400px;
+  margin: 24px;
+  background: #ffffff;
+}
+
+.profile h2 {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+.role {
+  margin: 0;
+  color: #64748b;
+}
+
+.skill {
+  background: #ede9fe;
+  color: #5b21b6;
+  font-size: 14px;
+}
+
+.btn {
+  background: #7c3aed;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 1. Kortelė: lygiai 400px pločio, padding 20px, rėmelis 1px solid #CBD5E1 */
+.profile {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px, solid, #cbd5e1;
+}
+/* 2. Avataras (.avatar) plaukia kairėje, 16px tarpas iki teksto */
+.avatar {
+  float: left;
+  margin: 0 16px 16px 0;
+}
+/* 3. Įgūdžiai (.skill) – žymos su padding 4px 10px ir 4px tarpu */
+.skill {
+  padding: 4px 10px;
+  margin: 4px;
+}
+/* 4. Mygtukas (.btn): po avataru, per visą kortelės plotį, padding 10px */
+.btn {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}

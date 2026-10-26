@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  color: #1e1e2e;
+}
+
+.card {
+  width: 300px;
+  background: #ffffff;
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.price {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0d9488;
+}
+
+.btn {
+  display: inline-block;
+  background: #0d9488;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 1. Kortelė: vidinė paraštė 24px, rėmelis 2px solid #0D9488 */
+.card {
+  border: 2px;
+  border-style: solid;
+  border-color: #0d9488;
+  padding: 24px;
+}
+/* 2. Kortelės matomas plotis turi būti lygiai 300px (patikrinkite DevTools) */
+.card {
+  box-sizing: border-box;
+}
+/* 3. Kortelės atitrauktos 24px nuo puslapio kraštų ir 24px viena nuo kitos */
+.card {
+  margin: 24px;
+}
+/* 4. Mygtukas (.btn): tekstas atitrauktas nuo krašto 10px iš viršaus ir apačios, 20px iš šonų */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+}
+/* 5. Klausimas: kiek pikselių pločio lieka kortelės turiniui? (atsakymą užrašykite komentare) */
+/* 300-2*2px(border)-2x24px(padding) = 248px
