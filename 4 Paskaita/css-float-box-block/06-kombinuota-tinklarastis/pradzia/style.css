@@ -103,6 +103,7 @@ body {
 }
 /* 2. Meniu punktai vienoje eilutėje; nuorodos su padding 10px 14px */
 .nav li {
+  float: right;
   display: inline-block;
   padding: 10px 14px;
 }
@@ -140,7 +141,7 @@ body {
   padding: 10px 16px;
 }
 /* 6. Kategorijų nuorodos – per visą juostos plotį, padding 10px 0, paspaudžiama visa eilutė */
-.categories li {
+.categories li a {
   display: block;
   width: 100%;
   padding: 10px 0;
