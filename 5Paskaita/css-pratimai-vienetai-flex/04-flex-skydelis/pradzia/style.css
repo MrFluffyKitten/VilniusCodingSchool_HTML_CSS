@@ -1,0 +1,69 @@
+/* Paletė ir šriftas – žr. užduoties skaidrę.
+   Tarpus (margin, padding, gap) ir apvalinimus (border-radius) parinkite patys.
+   Svarbu: @import rašomas pačioje failo pradžioje, prieš visas taisykles. */
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: cover;
+}
+
+.avatar-sm {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+.project-img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 1. Šriftas Plus Jakarta Sans (Google Fonts); fonas #F4F5FB, tekstas #111827, .muted – #6B7280, .panel ir .stat – #FFFFFF */
+
+/* 2. .layout: šoninė juosta (.sidebar) 16rem pločio kairėje, .main užima likusį plotį; puslapis bent viso lango aukščio */
+
+/* 3. .sidebar: fonas #1E1B4B, šviesus tekstas; stulpelis, kuriame meniu viršuje, o .upgrade blokas prispaustas prie apačios */
+
+/* 4. .side-nav: nuorodos viena po kita; .active ir .btn – fonas #6366F1, baltas tekstas */
+
+/* 5. .topbar: pasisveikinimas kairėje, paieška ir avataras dešinėje, centruoti vertikaliai */
+
+/* 6. .stats: keturios vienodo pločio kortelės; .up – #10B981, .warn – #F59E0B */
+
+/* 7. .panels: komandos skydelis dvigubai platesnis už projekto skydelį */
+
+/* 8. .member: avataras, vardas su pareigomis ir žyma vienoje eilutėje; žyma prie dešinio krašto; .online – #10B981, .away – #F59E0B fonas */
+
+/* 9. .progress – 0.5rem aukščio, fonas #E5E7EB; .progress-bar – 68% pločio, #6366F1; .project-foot – tekstas kairėje, avatarai dešinėje */

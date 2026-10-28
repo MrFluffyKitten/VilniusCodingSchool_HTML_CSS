@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.hero {
+  background: #1e1b4b;
+  color: #ffffff;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #a5b4fc;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero h1 {
+  margin: 0.25em 0;
+  line-height: 1.1;
+}
+
+.lead {
+  margin: 0 0 1.5em;
+  color: #c7d2fe;
+}
+
+.btn {
+  display: inline-block;
+  background: #f97316;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page h2 {
+  margin: 0 0 0.5em;
+}
+
+.agenda {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #ffffff;
+}
+
+.time {
+  display: inline-block;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.note {
+  color: #64748b;
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 1. Šrifto dydžiai tik rem: h1 – 3rem, .lead – 1.25rem, h2 – 1.75rem, .note – 0.875rem */
+h1 {
+  font-size: 3rem;
+}
+.lead {
+  font-size: 1.25rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+.note {
+  font-size: 0.875rem;
+}
+/* 2. .hero – bent pusės lango aukščio (vh); šonuose padding 8vw, viršuje ir apačioje 3rem */
+.hero {
+  min-height: 30vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* 3. .btn – padding 0.75em 1.5em; .btn-small – font-size 0.875rem (jo padding turi sumažėti pats) */
+.btn {
+  padding: 0.75em 1.5em;
+}
+
+/* 4. .page – 80% tėvo pločio, bet ne platesnis nei 48rem, centruotas; tarpas iki .hero – 3rem */
+.page {
+  width: 80%;
+  max-width: 48rem;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+/* 5. .agenda – 1px rėmelis #E2E8F0; li – padding 1em, linija apačioje 1px; .time – 4em pločio */
+.agenda {
+  border: 1px solid #e2e8f0;
+}
+.agenda li {
+  padding: 1em;
+  border-bottom: 1px solid #e2e8f0;
+}
+.time {
+  width: 4em;
+}
+/* 6. Klausimas: ką pamatysite, jei html { font-size: 20px; }? Kas padidės, o kas – ne? (atsakymą parašykite komentare) */
+/* hero aukštis nepakis, rėmelių storis nepakis
+visas tekstas padidės. */

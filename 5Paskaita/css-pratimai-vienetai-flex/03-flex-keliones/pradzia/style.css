@@ -1,0 +1,90 @@
+/* Paletė ir šriftas – žr. užduoties skaidrę.
+   Tarpus (margin, padding, gap) ir apvalinimus (border-radius) parinkite patys.
+   Svarbu: @import rašomas pačioje failo pradžioje, prieš visas taisykles. */
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* Fono nuotrauka su tamsiu sluoksniu – jau paruošta */
+.hero {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)),
+    url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 1. Šriftas DM Sans (Google Fonts); fonas #F8FAFC, tekstas #0F172A, .hero tekstas baltas (#FFFFFF), kortelių aprašymai #64748B */
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+.hero {
+  color: white;
+}
+p {
+  color: #64748b;
+}
+/* 2. .hero – bent 70vh aukščio stulpelis: .navbar viršuje, .hero-content užima likusią vietą ir yra centruotas abiem ašimis */
+.hero {
+  height: 70vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+/* 3. .navbar: logotipas, meniu ir mygtukas vienoje eilutėje, kraštuose ir per vidurį, centruoti vertikaliai; .menu nuorodos su tarpais */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+/* 4. .btn – fonas #F97316, baltas tekstas, be rėmelio; .tag ir .link – spalva #0F766E */
+.btn {
+  background-color: #f97316;
+  color: white;
+}
+.tag {
+  color: #0f766e;
+}
+.link {
+  color: #0f766e;
+}
+/* 5. .section-head: antraštė kairėje, nuoroda dešinėje */
+
+/* 6. .cards: trys vienodo pločio ir aukščio kortelės (#FFFFFF); .card-footer (kaina + mygtukas) visada kortelės apačioje */
+
+/* 7. .newsletter: fonas #0F766E, baltas tekstas; tekstas ir forma greta po lygiai pločio; input užima visą formos plotį šalia mygtuko */
