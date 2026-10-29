@@ -46,7 +46,7 @@ html {
 .hero {
   color: white;
 }
-p {
+.card-body p {
   color: #64748b;
 }
 /* 2. .hero – bent 70vh aukščio stulpelis: .navbar viršuje, .hero-content užima likusią vietą ir yra centruotas abiem ašimis */
@@ -84,7 +84,81 @@ p {
   color: #0f766e;
 }
 /* 5. .section-head: antraštė kairėje, nuoroda dešinėje */
-
+.container {
+  margin: 2rem;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* 6. .cards: trys vienodo pločio ir aukščio kortelės (#FFFFFF); .card-footer (kaina + mygtukas) visada kortelės apačioje */
-
+.cards {
+  display: flex;
+  align-content: space-around;
+  gap: 2rem;
+}
+.card {
+  width: 33%;
+}
+.card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+.card-body {
+  border: #64748b 1px;
+  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.card-body span {
+  font-weight: bold;
+}
+.card-body h3 {
+  margin: 0.5rem 0;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  color: black;
+  font-size: 1.25rem;
+}
 /* 7. .newsletter: fonas #0F766E, baltas tekstas; tekstas ir forma greta po lygiai pločio; input užima visą formos plotį šalia mygtuko */
+.newsletter {
+  background-color: #0f766e;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+  margin-top: 2rem;
+}
+.btn {
+  padding: 0.5rem;
+  border-radius: 20px;
+  min-width: 5rem;
+  text-align: center;
+}
+.btn-large {
+  padding: 1rem;
+  border-radius: 40px;
+  min-width: 8rem;
+  text-align: center;
+}
+input {
+  padding: 0.5rem;
+  width: 15rem;
+  border-radius: 20px;
+  border-style: none;
+}
+.newsletter h2 {
+  margin-block: 0;
+}
+.newsletter p {
+  margin-block: 0;
+}
