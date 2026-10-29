@@ -1,0 +1,90 @@
+/* layout.css – maketas MAŽAM ekranui (mobile first).
+   Čia rašote flexbox taisykles telefonui; media užklausų čia nėra. */
+
+.hero-img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover; /* nuotrauka užpildo plotą neiškraipydama proporcijų */
+}
+
+.game-card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 4. .header – stulpelis: logotipas virš meniu, abu centruoti; .nav – nuorodos vienoje eilutėje su tarpais */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  gap: 1rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+/* 5. .hero – stulpelis: nuotrauka virš teksto, su tarpu tarp jų */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* 6. .game-list – kortelės viena po kitos (stulpelis) su tarpais; .game-info – pavadinimas kairėje, įvertinimas dešinėje */
+.game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 0.5rem;
+}
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+/* 7. .tournament-list ir .tournament – stulpeliai: turnyrai vienas po kito, o kortelėje data, informacija, prizas ir mygtukas vienas po kito */
+.tournament-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* margin: 1rem; */
+}
+.tournament {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.game-card {
+  border-radius: 20px;
+}
+.game-info {
+  padding: 0.5rem;
+}
+img {
+  border-radius: 20px;
+}
+h2 {
+  margin-top: 2.5rem;
+}
+body {
+  margin: 1rem;
+}
+.t-info {
+  align-content: left;
+}
+.prize {
+  justify-content: end;
+  align-items: end;
+}
