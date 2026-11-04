@@ -27,15 +27,68 @@ a {
     url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1600&q=80");
   background-size: cover;
   background-position: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
 /* ===== UŽDUOTYS ===== */
-
+$bgMain: #fff7ed;
+$bgCard: white;
+$textDark: #1c1917;
 /* 1. Tekstui – Space Grotesk, antraštėms (h1, h2, h3, .logo, .price, .hero-fact strong) – Bebas Neue; fonas #FFF7ED, tekstas #1C1917 */
-
+html {
+  font-family: fantasy;
+}
+h1,
+h2,
+h3,
+.logo,
+.price {
+  color: $textDark;
+}
+body,
+.header,
+main {
+  background-color: $bgMain;
+}
+.hero-fact strong,
+.btn {
+  color: #ffffff;
+}
 /* 2. .btn – fonas #E11D48, tekstas baltas; .price – #E11D48; .time tekstas ir .badge fonas – #7C3AED; .hero h1 – #FACC15 */
-
+.btn {
+  background-color: #e11d48;
+}
+.price {
+  color: #e11d48;
+}
+.time {
+  color: #7c3aed;
+}
+.badge {
+  background-color: #7c3aed;
+}
+.hero h1 {
+  color: #facc15;
+}
 /* 3. .artist, .day ir .ticket – fonas #FFFFFF; .ticket.featured ir .buy-bar – fonas #1C1917, tekstas #FFF7ED;
     antrinis tekstas #78716C: .artist p, .page-head p, .footer */
+.artist,
+.day,
+.ticket {
+  background-color: $bgCard;
+}
+.ticket.featured,
+.buy-bar {
+  background-color: $textDark;
+  color: $bgMain;
+}
+.artist p,
+.page-head p,
+.footer {
+  color: #78716c;
+}
+.logo {
+  font-size: 2rem;
+  color: #e11d48;
+}

@@ -32,8 +32,56 @@ a {
 /* ===== UŽDUOTYS ===== */
 
 /* 1. Tekstui – Inter, antraštėms (h1, h2, h3, .logo, .stat strong, .step-num) – Orbitron; fonas #050816, tekstas #E2E8F0 */
+html {
+  font-family: monospace;
+}
+.stat strong {
+  font-size: 2rem;
+  color: #e2e8f0;
+}
+a,
+p,
+h1,
+h2,
+h3,
+.logo,
+.step-num {
+  color: #e2e8f0;
+}
+
+body {
+  background-color: #050816;
+}
 
 /* 2. Akcentas #22D3EE: .logo span, .eyebrow, .stat strong, .step-num, .link;
     antrinis tekstas #94A3B8: .stat span, .step p, .member p, .spec span, .footer */
+.logo span,
+.stat strong,
+.eyebrow,
+.step-num,
+.link {
+  color: #22d3ee;
+}
 
+.stat span,
+.step p,
+.member p,
+.spec span,
+footer {
+  color: #94a3b8;
+}
 /* 3. .btn – fonas #22D3EE, tekstas #050816; .stat, .step, .member ir .specs – fonas #0F172A, 1px rėmelis #1E293B */
+.btn {
+  background-color: #22d3ee;
+  color: #050816;
+}
+.stat,
+.step,
+.member,
+.specs {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+}
+.mission strong {
+  color: #e2e8f0;
+}

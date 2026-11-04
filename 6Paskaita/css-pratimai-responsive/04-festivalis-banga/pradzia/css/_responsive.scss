@@ -6,7 +6,53 @@
 
 /* 8. Nuo 768px: .header – viena eilutė (logotipas kairėje, meniu ir mygtukas dešinėje), .nav be 100% pločio;
     .header-btn – matomas; .buy-bar – PASLĖPTAS, body padding-bottom – 0 */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    .nav {
+      max-width: 33%;
+      a {
+        align-content: center;
+      }
+    }
+    .btn {
+      display: flex;
+      align-self: center;
+    }
+  }
+  .buy-bar {
+    display: none;
+  }
+  body {
+    padding-bottom: 0;
+  }
+  .artist-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .artist {
+    flex: auto;
+    width: calc(50% - 1.5rem);
+  }
+  .days {
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    .day {
+      min-width: calc(50% - 0.5rem);
+      flex-grow: 100;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .artist {
+    flex: auto;
+    width: calc(50% - 1.5rem);
+  }
+}
 /* 9. Nuo 768px: .artist-list – perkeliama (wrap), po 2 eilutėje; .days – po 2, TREČIA diena per visą plotį (flex-grow);
       .tickets – .featured per visą plotį viršuje, kiti du bilietai greta po lygiai */
 

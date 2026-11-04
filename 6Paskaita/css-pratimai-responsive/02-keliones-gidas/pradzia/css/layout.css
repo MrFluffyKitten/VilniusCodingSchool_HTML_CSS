@@ -15,12 +15,144 @@
 /* ===== UŽDUOTYS ===== */
 
 /* 4. .header – stulpelis, turinys centruotas; .nav – nuorodos per visą plotį, tolygiai išdėstytos (space-around) */
-
+.header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+.nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  width: 100vw;
+  margin: 0.5rem;
+}
 /* 5. .search – stulpelis: įvestis virš mygtuko, abu per visą plotį */
-
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100vw;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
 /* 6. .filters – visi mygtukai vienoje eilutėje (nowrap), kas netelpa – slenkama į šoną (overflow-x: auto); .chip nesitraukia (flex-shrink: 0) */
-
+.filters {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw;
+  margin: 0.5rem;
+}
+.chip {
+  display: flex;
+  flex-shrink: 0;
+  border: 1px solid #0e7490;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
 /* 7. .dest-list – kortelės viena po kitos su tarpais; .dest-meta – trukmė kairėje, kaina dešinėje */
-
+.dest-list {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+.dest-meta {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
 /* 8. kryptis.html: .content – stulpelis, .facts rodomas PIRMAS (order); .fact – pavadinimas kairėje, reikšmė dešinėje;
     .gallery – po 2 nuotraukas eilutėje (wrap + calc(50% - pusė gap)); .footer – stulpeliai vienas po kito */
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0.5rem;
+}
+.facts {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+}
+.facts h3 {
+  margin: 0.5rem;
+}
+.fact {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: auto;
+}
+.facts .btn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5rem;
+  width: auto;
+}
+.gallery {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.gallery img {
+  border-radius: 20px;
+  width: calc(50% - 0.25rem);
+  height: auto;
+}
+.logo {
+  flex-wrap: wrap;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 0.5rem;
+}
+.hero {
+  padding: 2rem 0.5rem;
+}
+.btn {
+  width: 30rem;
+  height: 2rem;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.search input {
+  width: 30rem;
+  height: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.dest-card {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.dest-card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+.dest-body {
+  padding: 0.5rem;
+}
+body {
+  background-color: #fff2de;
+}

@@ -1,0 +1,149 @@
+$borderCard: #fff7ed;
+
+/* layout.css – maketas MAŽAM ekranui (mobile first).
+   Čia rašote flexbox taisykles telefonui; media užklausų čia nėra. */
+
+.artist img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover; /* nuotrauka užpildo plotą neiškraipydama proporcijų */
+}
+
+.slots,
+.perks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Pirkimo juosta prilipusi prie ekrano apačios – jau paruošta */
+.buy-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  padding-bottom: 5rem; /* kad .buy-bar neuždengtų puslapio apačios */
+}
+
+/* ===== UŽDUOTYS ===== */
+
+/* 4. .header – eilutė su perkėlimu (wrap): logotipas viršuje, .nav – po juo per visą plotį (flex-basis: 100%),
+    nuorodos išdėstytos tolygiai (space-between); .header-btn – PASLĖPTAS */
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 0.5rem;
+}
+
+/* 5. .hero-facts – trys faktai eilutėje po lygiai; .artist-list – KARUSELĖ: viena eilutė (nowrap), slenkama į šoną (overflow-x: auto),
+    kiekvienas .artist – 70% pločio ir nesitraukia (flex: 0 0 70%) */
+.hero {
+  min-height: 12rem;
+  align-content: center;
+
+  &-facts {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  &-fact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+}
+.artist-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+.artist {
+  flex: 0 0 70%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+.artist p,
+.artist h3,
+.artists h2,
+.lineup,
+footer,
+.buy-bar {
+  padding: 0.5rem;
+}
+/* 6. .days ir .tickets – stulpeliai su tarpais; .slots li – laikas kairėje, atlikėjas dešinėje;
+    .ticket – stulpelis, mygtukas visada apačioje; .ticket.featured – rodomas PIRMAS (order) */
+.days,
+.tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+}
+.ticket.featured {
+  order: initial;
+}
+/* 7. .buy-bar – tekstas kairėje, mygtukas dešinėje, centruoti vertikaliai */
+.buy-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0.5rem;
+}
+.footer {
+  align-self: center;
+  justify-self: center;
+}
+.btn {
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 20px;
+  align-content: center;
+  justify-content: center;
+  width: 7rem;
+  height: 2rem;
+}
+.day {
+  h3 {
+    border-bottom: 3px solid $borderCard;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .slots {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem;
+      border-bottom: 1px solid $borderCard;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+.header-btn {
+  display: none;
+}
