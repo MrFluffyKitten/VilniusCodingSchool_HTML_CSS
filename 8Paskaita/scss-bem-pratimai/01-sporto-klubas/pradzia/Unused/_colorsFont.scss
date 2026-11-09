@@ -1,9 +1,7 @@
-// Main font
 @font-face {
   font-family: "defaultFont";
-  src: url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap);
+  src: url(https:fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap);
 }
-
 // Color presets
 $textMainDark: black;
 $textMainSub: #9c9b9b;
@@ -14,37 +12,9 @@ $bgFooter: #080024e7;
 $bgCard: white;
 $bgMain: #f1f1f1;
 $bgImg: #ffddc6;
-
-// Default font for all webpages.
-* {
-  font-family: "defaultFont";
-  font-size: 16px;
-  text-decoration: none;
-}
-
-// Text
-h1 {
-  color: $textMainLight;
-  font-weight: bold;
-  font-size: 3rem;
-}
-h2 {
-  color: $textMainDark;
-  font-weight: bold;
-  font-size: 2rem;
-}
-h3 {
-  color: $textMainDark;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-p {
-  color: $textMainSub;
-}
-
 // Header
 .header {
-  background-color: $bgMain;
+  background-color: #f1f1f1;
   &__logo {
     color: $textMainDark;
     font-weight: bold;

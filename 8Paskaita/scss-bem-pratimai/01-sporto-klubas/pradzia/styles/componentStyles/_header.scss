@@ -1,0 +1,56 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+// Header
+.header {
+  background-color: c.$bgMain;
+  &__logo {
+    color: c.$textMainDark;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  & img {
+    height: 2.5rem;
+  }
+}
+.header__navIndex {
+  background-color: c.$bgButton;
+  color: c.$textMainLight;
+}
+.header__navEvent,
+.header__navReg {
+  color: c.$textMainSub;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem 2rem;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 0.5rem;
+    width: 30vw;
+    max-width: 16rem;
+  }
+  &__logo {
+    display: flex;
+    align-content: center;
+    gap: 0.5rem;
+  }
+  &__title,
+  &__navItem {
+    align-self: center;
+  }
+  &__navIndex {
+    padding: 0.5rem;
+    border-radius: 20px;
+    align-self: center;
+  }
+}
+.btn {
+  padding: 0.5rem;
+  border-radius: 20px;
+}

@@ -1,0 +1,32 @@
+@use "baseColors" as c;
+@font-face {
+  font-family: "defaultFont";
+  src: url(https:fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap);
+}
+
+// Default font for all webpages.
+* {
+  font-family: "defaultFont";
+  font-size: 16px;
+  text-decoration: none;
+}
+
+// Text
+h1 {
+  color: c.$textMainLight;
+  font-weight: bold;
+  font-size: 3rem;
+}
+h2 {
+  color: c.$textMainDark;
+  font-weight: bold;
+  font-size: 2rem;
+}
+h3 {
+  color: c.$textMainDark;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+p {
+  color: c.$textMainSub;
+}

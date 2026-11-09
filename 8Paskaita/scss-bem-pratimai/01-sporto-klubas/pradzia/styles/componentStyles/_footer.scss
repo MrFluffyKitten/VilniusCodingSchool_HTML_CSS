@@ -1,0 +1,29 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+//Footer
+.footer {
+  background-color: c.$bgFooter;
+  a {
+    font-size: 0.8rem;
+  }
+}
+.footer__navItem {
+  color: c.$textMainSub;
+  font-size: 0.8rem;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 0.5rem;
+    width: 30vw;
+  }
+}

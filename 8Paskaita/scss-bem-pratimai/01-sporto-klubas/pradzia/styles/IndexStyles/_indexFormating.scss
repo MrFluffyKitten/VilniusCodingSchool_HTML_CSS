@@ -1,0 +1,38 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+// Hero
+.hero__badge {
+  background-color: c.$bgButton;
+  color: c.$textMainLight;
+}
+.hero {
+  background-image: url(../img/hero.svg);
+}
+.hero__btnReg {
+  background-color: c.$bgButton;
+  color: c.$textMainLight;
+}
+.hero__btnEvent {
+  background-color: c.$bgFooter;
+  color: c.$textMainLight;
+}
+
+// Cards
+.cards {
+  background-color: c.$bgMain;
+  img {
+    background-color: c.$bgImg;
+  }
+}
+.card {
+  background-color: c.$bgCard;
+  &__popular {
+    background-color: c.$textMainDark;
+    color: c.$textMainLight;
+    font-size: 0.8rem;
+  }
+}
+.card__subtext {
+  color: c.$textCardSub;
+}

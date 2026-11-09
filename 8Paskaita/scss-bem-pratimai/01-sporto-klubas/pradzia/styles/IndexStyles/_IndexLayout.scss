@@ -1,0 +1,76 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+body {
+  display: grid;
+  grid-template-rows: 5rem 1fr 1fr 5rem;
+  grid-template-areas:
+    "header"
+    "hero"
+    "cards"
+    "footer";
+}
+.hero {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  &__badge {
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 12.5rem;
+  }
+  &__btn {
+    display: flex;
+    align-content: center;
+    gap: 0.5rem;
+  }
+}
+.cards {
+  grid-area: cards;
+  padding: 1rem 2rem;
+  &__title {
+    margin: 0.5rem;
+  }
+  &__list {
+    margin: 1rem;
+    display: flex;
+    align-content: center;
+    gap: 0.5rem;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: calc(25% - 1rem);
+  border-radius: 20px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__popular {
+    border-radius: 20px;
+    padding: 0.2rem;
+    height: 1rem;
+    align-content: center;
+    &--hidden {
+      display: none;
+    }
+    &__kardio {
+      border: 3px solid c.$bgButton;
+    }
+  }
+  img {
+    border-radius: 15px;
+  }
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 20px;
+}
