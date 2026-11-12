@@ -1,0 +1,107 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+
+  ul {
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  li:before {
+    content: "✓";
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  &__title {
+    margin-bottom: 1rem;
+  }
+}
+
+.form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 0.5fr 1.5rem 4fr 1.5rem 1fr;
+  grid-template-areas:
+    "username username"
+    "usernameField usernameField"
+    "mail phone"
+    "mailField phoneField"
+    "product product"
+    "productField productField"
+    "radio radio"
+    "radioField radioField"
+    "comment comment"
+    "commentField commentField"
+    "terms terms"
+    "button button";
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 20px;
+  &__username {
+    grid-area: username;
+  }
+  &__usernameField {
+    grid-area: usernameField;
+    height: 2rem;
+  }
+  &__mail {
+    grid-area: mail;
+  }
+  &__mailField {
+    grid-area: mailField;
+    height: 2rem;
+  }
+  &__phone {
+    grid-area: phone;
+  }
+  &__phoneField {
+    grid-area: phoneField;
+    height: 2rem;
+  }
+  &__product {
+    grid-area: product;
+  }
+  &__productField {
+    grid-area: productField;
+    height: 2.2rem;
+  }
+  &__radio {
+    grid-area: radio;
+  }
+  &__radioField {
+    grid-area: radioField;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__comment {
+    grid-area: comment;
+  }
+  &__commentField {
+    grid-area: commentField;
+    height: 8rem;
+  }
+  &__terms {
+    grid-area: terms;
+  }
+  &__btn {
+    grid-area: button;
+  }
+}
+.header__navReg {
+  padding: 0.5rem;
+  border-radius: 20px;
+}

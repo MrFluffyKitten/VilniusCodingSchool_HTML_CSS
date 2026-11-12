@@ -1,0 +1,26 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+h1 {
+  color: c.$textMainDark;
+}
+main {
+  background-color: c.$bgMain;
+}
+.form {
+  background-color: white;
+}
+.form__btn {
+  background-color: c.$bgButton;
+  color: c.$textMainLight;
+  border: none;
+}
+main li:before {
+  background-color: c.$bgButton;
+  color: white;
+  border-radius: 50%;
+}
+.header__navReg {
+  background-color: c.$bgButton;
+  color: c.$textMainLight;
+}

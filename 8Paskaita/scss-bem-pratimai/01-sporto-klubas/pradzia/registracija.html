@@ -33,42 +33,104 @@
         <a href="tvarkarastis.html" class="header__navItem header__navEvents">
           Tvarkaraštis
         </a>
-        <a href="registracija.html" class="header__navItem header__nacReg">
+        <a href="registracija.html" class="header__navItem header__navReg">
           Registracija
         </a>
       </nav>
     </header>
     <main>
       <!-- Kairėje: h1, tekstas ir benefits sąrašas (<ul>) su 3 privalumais -->
-      <section>
-        <h1>Registracija į treniruotę</h1>
-        <p>
-          Užpildyk formą ir mes patvirtinsime vietą el. paštu per 24 valandas.
-        </p>
-      </section>
-      <section>
-        <ul>
-          <li>Pirmoji treniruotė - nemokamai</li>
-          <li>Narystę galima sustabdyti bet kada</li>
-          <li>Rankšluosčiai ir spintelės įskaičiuoti</li>
-        </ul>
-      </section>
+      <hero class="hero">
+        <div>
+          <h1 class="hero__title">Registracija į treniruotę</h1>
+          <p class="hero__subtext">
+            Užpildyk formą ir mes patvirtinsime vietą el. paštu per 24 valandas.
+          </p>
+        </div>
 
+        <section class="percs">
+          <ul>
+            <li>Pirmoji treniruotė - nemokamai</li>
+            <li>Narystę galima sustabdyti bet kada</li>
+            <li>Rankšluosčiai ir spintelės įskaičiuoti</li>
+          </ul>
+        </section>
+      </hero>
       <!-- Dešinėje: form blokas. Laukai: vardas ir pavardė, el. paštas, telefonas,
          treniruotė (<select>), narystė (3 radio), komentaras (<textarea>),
          sutikimas (checkbox) ir mygtukas „Registruotis“.
          Kiekvienas laukas turi <label for="..."> -->
-      <form>
-        <label for="Name">Vardas ir pavardė:</label>
-        <input type="text" id="Name" name="Name" placeholder="Jonas Jonaitis" />
-        <label></label>
-        <input type="mail" />
-        <label></label>
-        <input />
-        <label></label>
-        <input />
-        <label></label>
-        <input />
+      <form class="form">
+        <label class="form__username" for="Name">Vardas ir pavardė:</label>
+
+        <input
+          class="form__usernameField"
+          type="text"
+          id="Name"
+          name="Name"
+          placeholder="Jonas Jonaitis"
+        />
+
+        <label class="form__mail" for="mail">El. paštas</label>
+
+        <input
+          class="form__mailField"
+          type="mail"
+          id="mail"
+          name="mail"
+          placeholder="jonas@pastas.lt"
+        />
+
+        <label class="form__phone" for="phone">Telefonas</label>
+
+        <input
+          class="form__phoneField"
+          type="phone"
+          id="phone"
+          name="phone"
+          placeholder="+370 600 00000"
+        />
+
+        <label class="form__product" for="product">Treniruotė</label>
+
+        <select class="form__productField" name="product" id="product">
+          <option>Joga</option>
+          <option>Jėgos teniruotė</option>
+          <option>Kardio Intervalai</option>
+          <option>Spiningas</option>
+        </select>
+        <label class="form__radio" for="duration">Narystė</label>
+        <div class="form__radioField">
+          <div class="form__radioDay">
+            <input type="radio" id="day" name="duration" />
+            <label for="day">Vienkartinė - 8€</label>
+          </div>
+          <div class="form__radioMonth">
+            <input type="radio" id="month" name="duration" />
+            <label for="month">Mėnesio - 39€</label>
+          </div>
+          <div class="form__radioYear">
+            <input type="radio" id="year" name="duration" />
+            <label for="year">Metinė - 349€</label>
+          </div>
+        </div>
+        <label class="form__comment" for="comment">Komentaras</label>
+        <input
+          class="form__commentField"
+          type="text"
+          id="comment"
+          name="comment"
+        />
+        <div class="form__terms">
+          <input
+            class="form__termsCheck"
+            type="checkbox"
+            id="terms"
+            name="terms"
+          />
+          <label for="form__termsText">Sutinku su klubo taisyklėmis</label>
+        </div>
+        <button class="btn form__btn">Registruotis</button>
       </form>
     </main>
 

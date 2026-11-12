@@ -1,8 +1,4 @@
 @use "baseColors" as c;
-@font-face {
-  font-family: "defaultFont";
-  src: url(https:fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap);
-}
 
 // Default font for all webpages.
 * {
@@ -13,7 +9,6 @@
 
 // Text
 h1 {
-  color: c.$textMainLight;
   font-weight: bold;
   font-size: 3rem;
 }

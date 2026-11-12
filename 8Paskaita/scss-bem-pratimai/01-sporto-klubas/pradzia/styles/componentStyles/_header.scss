@@ -3,7 +3,7 @@
 
 // Header
 .header {
-  background-color: c.$bgMain;
+  background-color: c.$bgCard;
   &__logo {
     color: c.$textMainDark;
     font-weight: bold;
@@ -13,11 +13,9 @@
     height: 2.5rem;
   }
 }
-.header__navIndex {
-  background-color: c.$bgButton;
-  color: c.$textMainLight;
-}
-.header__navEvent,
+
+.header__navIndex,
+.header__navEvents,
 .header__navReg {
   color: c.$textMainSub;
 }

@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "defaultFont";
-  src: url(https:fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap);
-}
+@charset "UTF-8";
 * {
   font-family: "defaultFont";
   font-size: 16px;
@@ -9,32 +6,31 @@
 }
 
 h1 {
-  color: white;
   font-weight: bold;
   font-size: 3rem;
 }
 
 h2 {
-  color: black;
+  color: #1f2340;
   font-weight: bold;
   font-size: 2rem;
 }
 
 h3 {
-  color: black;
+  color: #1f2340;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 p {
-  color: #9c9b9b;
+  color: #6b7085;
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: white;
 }
 .header__logo {
-  color: black;
+  color: #1f2340;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -42,14 +38,10 @@ p {
   height: 2.5rem;
 }
 
-.header__navIndex {
-  background-color: #ff6600;
-  color: white;
-}
-
-.header__navEvent,
+.header__navIndex,
+.header__navEvents,
 .header__navReg {
-  color: #9c9b9b;
+  color: #6b7085;
 }
 
 .header {
@@ -87,14 +79,14 @@ p {
 }
 
 .footer {
-  background-color: rgba(8, 0, 36, 0.9058823529);
+  background-color: #14172b;
 }
 .footer a {
   font-size: 0.8rem;
 }
 
 .footer__navItem {
-  color: #9c9b9b;
+  color: #6b7085;
   font-size: 0.8rem;
 }
 
@@ -104,7 +96,6 @@ p {
   justify-content: space-between;
   align-content: center;
   padding: 1rem 2rem;
-  margin-top: 2rem;
 }
 .footer__nav {
   display: flex;
@@ -112,4 +103,126 @@ p {
   align-content: center;
   gap: 0.5rem;
   width: 30vw;
+}
+
+h1 {
+  color: #1f2340;
+}
+
+main {
+  background-color: #f5f6fa;
+}
+
+.form {
+  background-color: white;
+}
+
+.form__btn {
+  background-color: #ff5a36;
+  color: white;
+  border: none;
+}
+
+main li:before {
+  background-color: #ff5a36;
+  color: white;
+  border-radius: 50%;
+}
+
+.header__navReg {
+  background-color: #ff5a36;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+main ul {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main li:before {
+  content: "✓";
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.hero__title {
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 0.5fr 1.5rem 4fr 1.5rem 1fr;
+  grid-template-areas: "username username" "usernameField usernameField" "mail phone" "mailField phoneField" "product product" "productField productField" "radio radio" "radioField radioField" "comment comment" "commentField commentField" "terms terms" "button button";
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.form__username {
+  grid-area: username;
+}
+.form__usernameField {
+  grid-area: usernameField;
+  height: 2rem;
+}
+.form__mail {
+  grid-area: mail;
+}
+.form__mailField {
+  grid-area: mailField;
+  height: 2rem;
+}
+.form__phone {
+  grid-area: phone;
+}
+.form__phoneField {
+  grid-area: phoneField;
+  height: 2rem;
+}
+.form__product {
+  grid-area: product;
+}
+.form__productField {
+  grid-area: productField;
+  height: 2.2rem;
+}
+.form__radio {
+  grid-area: radio;
+}
+.form__radioField {
+  grid-area: radioField;
+  display: flex;
+  justify-content: space-between;
+}
+.form__comment {
+  grid-area: comment;
+}
+.form__commentField {
+  grid-area: commentField;
+  height: 8rem;
+}
+.form__terms {
+  grid-area: terms;
+}
+.form__btn {
+  grid-area: button;
+}
+
+.header__navReg {
+  padding: 0.5rem;
+  border-radius: 20px;
 }/*# sourceMappingURL=registracija.css.map */

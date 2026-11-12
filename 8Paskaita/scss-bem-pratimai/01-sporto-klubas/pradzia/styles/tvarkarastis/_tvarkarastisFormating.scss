@@ -1,0 +1,55 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+main {
+  background-color: c.$bgMain;
+}
+.table {
+  &__header {
+    background-color: c.$bgFooter;
+    color: c.$textMainLight;
+  }
+  &__time {
+    color: c.$bgButton;
+    font-weight: bold;
+  }
+  &__rowOdd {
+    background-color: c.$bgCard;
+  }
+  &__rowEven {
+    background-color: c.$bgMain;
+  }
+  &__level {
+    &--easy {
+      background-color: c.$tableBgEasy;
+      color: c.$tableTextEasy;
+      font-weight: bold;
+    }
+    &--medium {
+      background-color: c.$tableBgMedium;
+      color: c.$tableTextMedium;
+      font-weight: bold;
+    }
+    &--hard {
+      background-color: c.$tableBgHard;
+      color: c.$tableTextHard;
+      font-weight: bold;
+    }
+  }
+}
+.redirect {
+  background-color: c.$bgRedirect;
+  &__text {
+    color: c.$textMainDark;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &__btn {
+    background-color: c.$bgButton;
+    color: c.$textMainLight;
+  }
+}
+.header__navEvents {
+  background-color: c.$bgButton;
+  color: c.$textMainLight;
+}

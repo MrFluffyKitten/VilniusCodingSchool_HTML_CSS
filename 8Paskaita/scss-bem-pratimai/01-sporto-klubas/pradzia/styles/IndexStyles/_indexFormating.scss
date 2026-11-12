@@ -2,6 +2,9 @@
 @use "../baseStyles/baseFont";
 
 // Hero
+h1 {
+  color: c.$textMainLight;
+}
 .hero__badge {
   background-color: c.$bgButton;
   color: c.$textMainLight;
@@ -35,4 +38,8 @@
 }
 .card__subtext {
   color: c.$textCardSub;
+}
+.header__navIndex {
+  background-color: c.$bgButton;
+  color: c.$textMainLight;
 }
