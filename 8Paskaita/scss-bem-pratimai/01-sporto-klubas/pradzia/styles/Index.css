@@ -77,6 +77,11 @@ p {
   border-radius: 20px;
 }
 
+.header__navItem {
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
 .footer {
   background-color: #14172b;
 }
@@ -151,6 +156,7 @@ body {
   padding: 0.5rem;
   width: calc(25% - 1rem);
   border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(20, 23, 43, 0.08);
 }
 .card__header {
   display: flex;
@@ -173,13 +179,17 @@ body {
 }
 
 .btn {
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.header__navItem {
   padding: 0.5rem;
   border-radius: 20px;
 }
 
-.header__navIndex {
-  padding: 0.5rem;
-  border-radius: 20px;
+.hero__btnEvent {
+  border: 1px solid white;
 }
 
 h1 {
@@ -228,4 +238,35 @@ h1 {
 .header__navIndex {
   background-color: #ff5a36;
   color: white;
+}
+
+.header__navItem:hover {
+  transition: 0.3s;
+  background-color: #ffebdd;
+}
+.header__navIndex:hover {
+  transition: 0.3s;
+  background-color: #e2401d;
+}
+
+.hero__btnReg:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 90, 54, 0.8);
+}
+.hero__btnEvent:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  background-color: #f5f6fa;
+  color: #1f2340;
+}
+
+.card:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(20, 23, 43, 0.16);
+}
+.card:hover img {
+  transition: 0.3s;
+  transform: rotate(-10deg);
 }/*# sourceMappingURL=Index.css.map */

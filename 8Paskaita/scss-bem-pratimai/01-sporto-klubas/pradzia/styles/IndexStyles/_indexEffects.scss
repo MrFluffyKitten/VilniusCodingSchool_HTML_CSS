@@ -1,0 +1,38 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+.header {
+  &__navItem:hover {
+    transition: 0.3s;
+    background-color: c.$hoverThemeLight;
+  }
+
+  &__navIndex:hover {
+    transition: 0.3s;
+    background-color: c.$hoverTheme;
+  }
+}
+
+.hero {
+  &__btnReg:hover {
+    transition: 0.3s;
+    transform: translateY(-2px);
+    box-shadow: c.$shadowBoxButton;
+  }
+  &__btnEvent:hover {
+    transition: 0.3s;
+    transform: translateY(-2px);
+    background-color: c.$hoverWhite;
+    color: c.$textMainDark;
+  }
+}
+
+.card:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: c.$shadowBoxHover;
+  img {
+    transition: 0.3s;
+    transform: rotate(-10deg);
+  }
+}

@@ -78,6 +78,11 @@ p {
   border-radius: 20px;
 }
 
+.header__navItem {
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
 .footer {
   background-color: #14172b;
 }
@@ -115,6 +120,7 @@ main {
 
 .form {
   background-color: white;
+  box-shadow: 0 4px 16px rgba(20, 23, 43, 0.08);
 }
 
 .form__btn {
@@ -132,6 +138,11 @@ main li:before {
 .header__navReg {
   background-color: #ff5a36;
   color: white;
+}
+
+.field {
+  border-radius: 10px;
+  border: 1px solid #6b7085;
 }
 
 main {
@@ -171,6 +182,7 @@ main li:before {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(20, 23, 43, 0.08);
 }
 .form__username {
   grid-area: username;
@@ -225,4 +237,29 @@ main li:before {
 .header__navReg {
   padding: 0.5rem;
   border-radius: 20px;
+}
+
+.field {
+  padding: 0 0.5rem;
+}
+
+.header__navItem:hover {
+  transition: 0.3s;
+  background-color: #ffebdd;
+}
+.header__navReg:hover {
+  transition: 0.3s;
+  background-color: #e2401d;
+}
+
+.field:hover {
+  transition: 0.3s;
+  border-color: #1f2340;
+}
+
+.form__btn:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 90, 54, 0.8);
+  box-shadow: 0 4px 16px rgba(255, 90, 54, 0.8);
 }/*# sourceMappingURL=registracija.css.map */

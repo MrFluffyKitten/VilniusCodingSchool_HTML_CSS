@@ -49,6 +49,7 @@ body {
   padding: 0.5rem;
   width: calc(25% - 1rem);
   border-radius: 20px;
+  box-shadow: c.$shadowBox;
   &__header {
     display: flex;
     justify-content: space-between;
@@ -71,10 +72,13 @@ body {
 }
 
 .btn {
+  padding: 1rem;
+  border-radius: 20px;
+}
+.header__navItem {
   padding: 0.5rem;
   border-radius: 20px;
 }
-.header__navIndex {
-  padding: 0.5rem;
-  border-radius: 20px;
+.hero__btnEvent {
+  border: 1px solid c.$textMainLight;
 }

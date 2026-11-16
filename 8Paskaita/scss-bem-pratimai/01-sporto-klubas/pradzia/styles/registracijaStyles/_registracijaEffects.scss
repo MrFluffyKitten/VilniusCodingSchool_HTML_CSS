@@ -1,0 +1,24 @@
+@use "../baseStyles/baseColors" as c;
+@use "../baseStyles/baseFont";
+
+.header {
+  &__navItem:hover {
+    transition: 0.3s;
+    background-color: c.$hoverThemeLight;
+  }
+
+  &__navReg:hover {
+    transition: 0.3s;
+    background-color: c.$hoverTheme;
+  }
+}
+.field:hover {
+  transition: 0.3s;
+  border-color: c.$textMainDark;
+}
+.form__btn:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: c.$shadowBoxButton;
+  box-shadow: c.$shadowBoxButton;
+}

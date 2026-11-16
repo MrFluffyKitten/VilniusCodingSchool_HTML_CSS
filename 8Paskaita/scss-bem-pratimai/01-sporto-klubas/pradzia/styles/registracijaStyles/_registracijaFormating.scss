@@ -9,6 +9,7 @@ main {
 }
 .form {
   background-color: white;
+  box-shadow: c.$shadowBox;
 }
 .form__btn {
   background-color: c.$bgButton;
@@ -23,4 +24,8 @@ main li:before {
 .header__navReg {
   background-color: c.$bgButton;
   color: c.$textMainLight;
+}
+.field {
+  border-radius: 10px;
+  border: 1px solid c.$textMainSub;
 }

@@ -77,6 +77,11 @@ p {
   border-radius: 20px;
 }
 
+.header__navItem {
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
 .footer {
   background-color: #14172b;
 }
@@ -174,6 +179,7 @@ main {
   width: 100%;
   padding: 0.5rem;
   border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(20, 23, 43, 0.08);
   overflow: hidden;
 }
 .table tr {
@@ -206,6 +212,7 @@ main {
   align-items: center;
   padding: 2rem;
   border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(20, 23, 43, 0.08);
 }
 .redirect__btn {
   padding: 1rem;
@@ -214,4 +221,25 @@ main {
 .header__navEvents {
   padding: 0.5rem;
   border-radius: 20px;
+}
+
+.header__navItem:hover {
+  transition: 0.3s;
+  background-color: #ffebdd;
+}
+.header__navEvents:hover {
+  transition: 0.3s;
+  background-color: #e2401d;
+}
+
+.table__rowOdd:hover,
+.table__rowEven:hover {
+  transition: 0.3s;
+  background-color: #ffebdd;
+}
+
+.redirect__btn:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 90, 54, 0.8);
 }/*# sourceMappingURL=tvarkarastis.css.map */
